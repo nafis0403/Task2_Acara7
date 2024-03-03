@@ -1,0 +1,37 @@
+﻿<ArcGIS defaultAssembly="LayerSymbology.dll" defaultNamespace="LayerSymbology" xmlns="http://schemas.esri.com/DADF/Registry" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schemas.esri.com/DADF/Registry file:///C:/Program%20Files/ArcGIS/Pro/bin/ArcGIS.Desktop.Framework.xsd">
+  <AddInInfo id="{a106d21c-30fe-4af7-b894-f7ace0aa6141}" version="1.0" desktopVersion="2.8.29751">
+    <Name>LayerSymbology</Name>
+    <Description>LayerSymbology description</Description>
+    <Image>Images\AddinDesktop32.png</Image>
+    <Author>azkaa</Author>
+    <Company>Acme</Company>
+    <Date>2/26/2024 4:02:00 PM</Date>
+    <Subject>Framework</Subject>
+    <!-- Note subject can be one or more of these topics:
+                    Content, Framework, Editing, Geodatabase, Geometry, Geoprocessing, Layouts, Map Authoring, Map Exploration -->
+  </AddInInfo>
+  <!-- *** Add *** -->
+  <modules>
+	  <insertModule id="LayerSymbology_Module" className="Module1" autoLoad="false" caption="Module1">
+		  <groups>
+			  <group id="LayerSymbology_Group1" caption="Point Layer Symbols" appearsOnAddInTab="true">
+				  <!-- host controls within groups -->
+				  <button refID="LayerSymbology_SingleSymbol" size="large" />
+				  <button refID="LayerSymbology_GraduatedColor" size="large" />
+			  </group>
+		  </groups>
+		  <controls>
+			  <button id="LayerSymbology_SingleSymbol" caption="Apply Single Symbol" className="SingleSymbol" loadOnClick="true" smallImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/GenericButtonBlue16.png" largeImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/GenericButtonBlue32.png">
+				  <tooltip heading="Tooltip Heading">
+					  Tooltip text<disabledText />
+				  </tooltip>
+			  </button>
+			  <button id="LayerSymbology_GraduatedColor" caption="Apply Graduated Color" className="GraduatedColor" loadOnClick="true" smallImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/GenericButtonBlue16.png" largeImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/GenericButtonBlue32.png">
+				  <tooltip heading="Tooltip Heading">
+					  Tooltip text<disabledText />
+				  </tooltip>
+			  </button>
+		  </controls>
+	  </insertModule>
+  </modules>
+</ArcGIS>
